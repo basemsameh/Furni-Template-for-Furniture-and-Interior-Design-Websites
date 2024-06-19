@@ -1,0 +1,19 @@
+.why-choose .container .content {
+  max-width: 100%;
+}
+
+.why-choose .container .content .content-info .info {
+  width: 100%;
+}
+
+@media (width >= 787px) {
+  .why-choose .container .content .content-info .info {
+    width: calc(95% / 2);
+  }
+}
+
+@media (width >= 1024px) {
+  .why-choose .container .content .content-info .info {
+    width: calc(95% / 4);
+  }
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/thankyou.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Furni Template for Furniture and Interior Design Websites</title>
+  </head>
+
+<body>
+  <!-- Home -->
+  <header class="home">
+    <!-- Navbar of Home -->
+    <nav class="home-nav">
+      <div class="container">
+        <h3>Furni<span>.</span></h3>
+        <button type="button" class="list-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li class="icons">
+              <a href="#">
+                <i class="fa-regular fa-user"></i>
+              </a>
+              <a href="cart.html" class="cart-icon active">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Home Content -->
+    <section class="home-content" style="padding: 0 0 150px 20px;">
+      <div class="content">
+        <h1>Checkout</h1>
+      </div>
+    </section>
+  </header>
+  <!-- Main -->
+  <main>
+    <!-- Bills -->
+    <section class="bills">
+      <div class="container">
+        <p class="para-link">Returning customer? <a href="#">Click here</a> to login</p>
+        <div class="billing">
+          <h2>Billing Details</h2>
+          <form action="#" target="_blank" method="post">
+            <!-- Country -->
+            <label for="country" class="req">Country</label>
+            <select name="country" id="country" required>
+              <option value="bangladesh">Bangladesh</option>
+              <option value="algeria">Algeria</option>
+              <option value="afghanistan">Afghanistan</option>
+              <option value="ghana">Ghana</option>
+              <option value="albania">Albania</option>
+              <option value="bahrain">Bahrain</option>
+              <option value="colombia">Colombia</option>
+              <option value="dominican republic">Dominican Republic</option>
+            </select>
+            <!-- Fisrt & last name -->
+            <div class="name">
+              <div class="fname">
+                <label for="fname" class="req">First Name</label>
+                <input type="text" name="fname" id="fname" required>
+              </div>
+              <div class="lname">
+                <label for="lname" class="req">Last Name</label>
+                <input type="text" name="lname" id="lname" required>
+              </div>
+            </div>
+            <!-- Compeny Name -->
+            <label for="company-name">Company Name</label>
+            <input type="text" name="company-name" id="company-name">
+            <!-- Address -->
+            <label for="address" class="req">Address</label>
+            <input type="text" name="address" id="address" placeholder="Street address" required>
+            <input type="text" name="suite" id="suite" placeholder="Apartment, suite, unit etc. (optional)">
+            <div class="state-email">
+              <div class="state">
+                <label for="state" class="req">State / Country</label>
+                <input type="text" name="state" id="state">
+              </div>
+              <div class="zip">
+                <label for="zip" class="req">Posta / Zip</label>
+                <input type="text" name="zip" id="zip">
+              </div>
+              <div class="email">
+                <label for="email" class="req">Email Address</label>
+                <input type="email" id="email" name="email">
+              </div>
+              <div class="phone">
+                <label for="phone" class="req">Phone</label>
+                <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+              </div>
+            </div>
+            <!-- Create account link -->
+            <p class="create-account">
+              <input type="checkbox" name="create-account" id="create-account" data-bs-toggle="collapse"
+                data-bs-target="#createAccount" aria-controls="createAccount">
+              <label for="create-account" data-bs-toggle="collapse" href="#createAccount" aria-controls="createAccount">
+                Create an account?
+              </label>
+            </p>
+            <div class="collapse" id="createAccount">
+              <div class="card card-body">
+                <p>
+                  Create an account by entering the information below. If you are a
+                  returning customer please login at the top of the page.
+                </p>
+                <label for="password">Account Password</label>
+                <input type="password" name="password" id="password">
+              </div>
+            </div>
+            <!-- Ship To A Different Address Link -->
+            <p class="different-address">
+              <input type="checkbox" name="different-address" id="different-address" data-bs-toggle="collapse"
+                data-bs-target="#differentAddress" aria-controls="differentAddress">
+              <label for="different-address" data-bs-toggle="collapse" href="#differentAddress"
+                aria-controls="differentAddress">
+                Ship To A Different Address?
+              </label>
+            </p>
+            <div class="collapse" id="differentAddress">
+              <div class="card card-body">
+                <!-- Country -->
+                <label for="country" class="req">Country</label>
+                <select name="country" id="country" required>
+                  <option value="bangladesh">Bangladesh</option>
+                  <option value="algeria">Algeria</option>
+                  <option value="afghanistan">Afghanistan</option>
+                  <option value="ghana">Ghana</option>
+                  <option value="albania">Albania</option>
+                  <option value="bahrain">Bahrain</option>
+                  <option value="colombia">Colombia</option>
+                  <option value="dominican republic">Dominican Republic</option>
+                </select>
+                <!-- Fisrt & last name -->
+                <div class="name">
+                  <div class="fname">
+                    <label for="fname" class="req">First Name</label>
+                    <input type="text" name="fname" id="fname" required>
+                  </div>
+                  <div class="lname">
+                    <label for="lname" class="req">First Name</label>
+                    <input type="text" name="lname" id="lname" required>
+                  </div>
+                </div>
+                <!-- Compeny Name -->
+                <label for="company-name">Company Name</label>
+                <input type="text" name="company-name" id="company-name">
+                <!-- Address -->
+                <label for="address" class="req">Address</label>
+                <input type="text" name="address" id="address" placeholder="Street address" required>
+                <input type="text" name="address" id="address" placeholder="Apartment, suite, unit etc. (optional)">
+                <div class="state-email">
+                  <div class="state">
+                    <label for="state" class="req">State / Country</label>
+                    <input type="text" name="state" id="state">
+                  </div>
+                  <div class="zip">
+                    <label for="zip" class="req">Posta / Zip</label>
+                    <input type="text" name="zip" id="zip">
+                  </div>
+                  <div class="email">
+                    <label for="email" class="req">Email Address</label>
+                    <input type="email" id="email" name="email">
+                  </div>
+                  <div class="phone">
+                    <label for="phone" class="req">Phone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Order Notes -->
+            <label for="order-notes">Order Notes</label>
+            <textarea name="order-notes" id="order-notes" placeholder="Write your notes here..."></textarea>
+          </form>
+        </div>
+        <!-- Coupon Code and Your Order -->
+        <div class="coupon-order">
+          <!-- Coupon Code -->
+          <h2>Coupon Code</h2>
+          <form action="#" method="post" target="_blank">
+            <p>Enter your coupon code if you have one.</p>
+            <input type="text" name="coupon" placeholder="Coupon Code" required>
+            <button type="submit" class="btn">Apply</button>
+          </form>
+          <!-- Your Order -->
+          <h2>Your Order</h2>
+          <div class="order">
+            <div class="cotainer-table">
+              <table>
+                <thead>
+                  <th>Product</th>
+                  <th>Total</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="name-product">Top Up T-Shirt</span>
+                      <i class="fa-solid fa-xmark"></i>
+                      <span class="quantity">1</span>
+                    </td>
+                    <td>$<span class="total-product">250.00</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="name-product">Polo Shirt</span>
+                      <i class="fa-solid fa-xmark"></i>
+                      <span class="quantity">1</span>
+                    </td>
+                    <td>$<span class="total-product">100.00</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="word">Cart Subtotal</span></td>
+                    <td><b>$<span class="subtotal">350.00</span></b></td>
+                  </tr>
+                  <tr>
+                    <td><span class="word">Order Total</span></td>
+                    <td><b>$<span class="all-totals">350.00</span></b></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Links -->
+            <div class="links">
+              <p class="d-inline-flex gap-1">
+                <a data-bs-toggle="collapse" href="#bankTransfer" aria-controls="bankTransfer">
+                  Direct Bank Transfer
+                </a>
+              </p>
+              <div class="collapse" id="bankTransfer">
+                <div class="card card-body">
+                  Make your payment directly into our bank account. Please use your Order
+                  ID as the payment reference. Your order won’t be shipped until the funds
+                  have cleared in our account.
+                </div>
+              </div>
+            </div>
+            <!-- Links -->
+            <div class="links">
+              <p class="d-inline-flex gap-1">
+                <a data-bs-toggle="collapse" href="#chequePayment" aria-controls="chequePayment">
+                  Cheque Payment
+                </a>
+              </p>
+              <div class="collapse" id="chequePayment">
+                <div class="card card-body">
+                  Make your payment directly into our bank account. Please use your Order
+                  ID as the payment reference. Your order won’t be shipped until the funds
+                  have cleared in our account.
+                </div>
+              </div>
+            </div>
+            <!-- Links -->
+            <div class="links">
+              <p class="d-inline-flex gap-1">
+                <a data-bs-toggle="collapse" href="#paypal" aria-controls="paypal">
+                  Paypal
+                </a>
+              </p>
+              <div class="collapse" id="paypal">
+                <div class="card card-body">
+                  Make your payment directly into our bank account. Please use your Order
+                  ID as the payment reference. Your order won’t be shipped until the funds
+                  have cleared in our account.
+                </div>
+              </div>
+            </div>
+            <a class="btn" href="thankyou.html">Place Order</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <section class="container">
+      <!-- Figure -->
+      <figure>
+        <img src="images/img-footer.png" alt="Image Footer">
+      </figure>
+      <!-- From -->
+      <form action="#" target="_blank" method="post">
+        <h3>
+          <i class="fa-regular fa-envelope"></i> Subscribe to Newsletter
+        </h3>
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+      <!-- Container Content -->
+      <div class="container-content">
+        <div class="logo-icons">
+          <a href="#">Furni.</a>
+          <p>
+            Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl
+            dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet
+            dolor tempor tristique. Pellentesque habitant
+          </p>
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Knowledge base</a></li>
+            <li><a href="#">Live chat</a></li>
+          </ul>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Our team</a></li>
+            <li><a href="#">Leadership</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#">Nordic Chair</a></li>
+            <li><a href="#">Kruzo Aero</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Ergonomic Chair</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy-right">
+        <p>
+          Copyright &copy;2024. All Rights Reserved. — Designed with love by Untree.co
+          Distributed By ThemeWagon
+        </p>
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </section>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

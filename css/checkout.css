@@ -1,0 +1,208 @@
+a {
+  color: var(--black);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Bills Section */
+.bills .container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 0 100px 0;
+}
+
+.bills .container h2 {
+  padding: 20px 0;
+}
+
+.bills .container .para-link {
+  color: var(--black);
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.bills .container div {
+  width: 100%;
+}
+
+/* Billing Div */
+.bills .container .billing form {
+  background-color: var(--white);
+  padding: 40px;
+}
+
+.bills .container .billing form label {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  width: fit-content;
+  padding-bottom: 5px;
+}
+
+.bills .container .billing form .req::before {
+  content: "*";
+  position: absolute;
+  right: -12px;
+  color: red;
+}
+
+.bills .container .billing form select,
+.bills .container .billing form input,
+.bills .container .billing form textarea {
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+.bills .container .billing form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+
+.bills .container .billing form .name,
+.bills .container .billing form .state-email {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bills .container .billing form .name div,
+.bills .container .billing form .state-email div {
+  width: 100%;
+}
+
+.bills .container .billing form [type="checkbox"] {
+  width: 15px;
+  height: fit-content;
+  margin: 0;
+}
+
+.bills .container .billing form p {
+  color: var(--black);
+  font-size: 15px;
+  padding: 5px 0;
+}
+
+.bills .container .billing form .collapse {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.bills .container .billing form .collapse .card {
+  width: 100%;
+  padding: 0;
+  border: none;
+}
+
+.bills .container .billing form .collapse .card p {
+  color: var(--black);
+  padding-bottom: 20px;
+}
+
+.bills .container .billing form textarea {
+  height: 130px;
+}
+
+/* Coupon Code and Your Order */
+.coupon-order form {
+  background-color: var(--white);
+  padding: 40px;
+}
+
+.coupon-order form p {
+  padding: 0;
+  color: var(--black);
+}
+
+.coupon-order form input {
+  padding: 6px 12px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  width: 70%;
+  max-width: 330px;
+}
+
+.coupon-order .btn {
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.coupon-order .btn:hover {
+  filter: brightness(1.3);
+}
+
+.coupon-order .order {
+  background-color: var(--white);
+  padding: 40px;
+}
+
+.coupon-order .order .container-table {
+  overflow-x: auto;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+table thead {
+  border-bottom: 2px solid var(--black);
+}
+
+table thead th {
+  padding-bottom: 10px;
+}
+
+table tbody tr td {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.coupon-order .order .links {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  height: fit-content;
+  margin-bottom: 20px;
+}
+
+.coupon-order .order .links p {
+  padding: 0;
+}
+
+.coupon-order .order .links .collapse .card {
+  border: none;
+  padding: 10px 0;
+}
+
+@media (width >= 787px) {
+  .bills .container .billing form .name div,
+  .bills .container .billing form .state-email div {
+    width: calc(95% / 2);
+  }
+}
+
+@media (width >= 1100px) {
+  .bills .container .coupon-order,
+  .bills .container .billing {
+    width: calc(95% / 2);
+  }
+}

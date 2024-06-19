@@ -1,0 +1,47 @@
+/* Our Team Section */
+.our-team .container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.our-team .container .person {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.our-team .container .person figure img {
+  width: 100%;
+}
+
+.our-team .container .person h3 a {
+  color: var(--black);
+}
+
+.our-team .container .person a:hover,
+.our-team .container .person h3 a:hover {
+  text-decoration: none;
+}
+
+.our-team .container .person p {
+  color: grey;
+  font-size: 16px;
+}
+
+.our-team .container .person a {
+  color: var(--black);
+}
+
+@media (width >= 787px) {
+  .our-team .container .person {
+    width: calc(95% / 2);
+  }
+}
+
+@media (width >= 1024px) {
+  .our-team .container .person {
+    width: calc(95% / 4);
+  }
+}
