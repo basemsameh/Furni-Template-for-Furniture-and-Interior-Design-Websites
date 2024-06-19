@@ -88,7 +88,7 @@ The custom JavaScript in `main.js` includes the following functionalities:
 ## Links
 
 - Github Repo - [Repo](https://github.com/basemsameh/Furni-Template-for-Furniture-and-Interior-Design-Websites.git)
-- Live URL - [Demo](https://basemsameh.github.io/Arlo-Page/)
+- Live URL - [Demo](https://basemsameh.github.io/Furni-Template-for-Furniture-and-Interior-Design-Websites/)
 
 ## Author
 
